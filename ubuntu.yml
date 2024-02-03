@@ -202,13 +202,7 @@ Resources:
           rm -rf /tmp/AppJava/DAW-TOMCAT/springholamundo-main/.gradle
           ./gradlew war
           cd build/libs/
-          mv holamundo-0.0.1-SNAPSHOT-plain.war /opt/tomcat/webapps/ROOT.war
-
-          # Modificar el archivo server.xml para permitir el despliegue automático
-          echo "  <Context path=\"\" docBase=\"ROOT\" reloadable=\"true\" />" >> /opt/tomcat/conf/server.xml
-
-          #Reiniciar Tomcat para que la aplicación despliegue automáticamente
-          systemctl restart tomcat
+          mv holamundo-0.0.1-SNAPSHOT-plain.war /opt/tomcat/webapps/holamundo-0.0.1-SNAPSHOT-plain.war
 
 
           # Esta tiene que ser la última instrucción
