@@ -1,7 +1,7 @@
 #!/bin/bash
 
-# Desplegamos la plantilla de CloudFormarion
+# Desplegamos la plantilla de CloudFormation
 aws cloudformation deploy \
---template-file main.yml \
---stack-name "Tomcat-Despliegue" \
+--template-file ubuntu.yml \
+--stack-name "Cris-6" \
 --capabilities CAPABILITY_NAMED_IAM
